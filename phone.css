@@ -11,6 +11,7 @@
 #pic img{
    width:300px;
    height:175px;
+   position:relative;
 }
 
 #intro h2{
@@ -18,11 +19,11 @@
 }
 
 /*Location*/
-p{
+#location p{
     text-align:center;
 }
 
-iframe{
+#location iframe{
    width:200px;
    height:200px;
    position:relative;
@@ -30,14 +31,14 @@ iframe{
 }
  
 /*Video*/
-p{
+#video p{
     text-align:center;
 }
 
-iframe{
+#video iframe{
   position:relative;
-  width:100px;
-  height:100px;
+  width:200px;
+  height:200px;
   left:20%;
 }
 
