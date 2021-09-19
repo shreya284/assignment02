@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website-Assignment-02</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:800px)" href="tablet.css">
+    <link rel="stylesheet" media="screen and (max-width:530px)" href="phone.css">
+</head>
+<body>
+     <nav class="navbar">
+          <ul>
+             <li><a href="#home">Home</a></li>
+             <li><a href="#about">About Me</a></li>
+             <li><a href="#location">My Location</a></li>
+             <li><a href="#video">Video</a></li>
+             <li><a href="#contact">My Contact</a></li>
+          </ul>
+     </nav>
+
+    <section id="home">
+        <div class="main">
+            <h1 class="headings">Myself<br>Shreya S Shetty</h1>
+            <button class="btn">Know More</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <div id="pic">
+           <h1 class="headings">About Me</h1>
+            <img src="image4.jpg" alt="">
+            <div id="intro">
+               <h2>Shreya S Shetty</h2>
+               <p>Hello there, I'm Shreya S Shetty.I'm currently studying in Final Year(4th),7th semester of CSE(Computer Science and Engineering) at Shri Madhwa Vadiraja Institute of Technology and Management(SMVITM),Bantakal.I like to draw Japanese Anime Sketches and learning to write Japanese as a Level-1 beginner slowly from previous year onwards.I'm hard-working,dedicated and compassionate about anything I will to learn, and also I like to explore new horizons of trending technologies.I want to be a good team-player for the welfare and the betterment of the corporate world and organization.</p> 
+            </div>
+        </div>
+    </section>
+
+   <section id="location">
+        <h1 class="headings">My Location</h1>
+          <p>My Hometown is at Cherkady, Brahmavara, Udupi and my Address is:"Krishna-Kala", near JRG Foundaries, Pin code:576213(Brahmavara).You can check for the reference of my route in the given map below for destination.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d62094.10263990538!2d74.790443394266!3d13.419666584048224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x3bbca2f5db66dee3%3A0x5e692b7f959d84c0!2sPethri%2C%20Karnataka!3m2!1d13.419668999999999!2d74.825463!4m5!1s0x3bbcbd83f8beefb9%3A0xf23522dd860ad686!2zQnJhbWF2YXJhIOCyrOCzjeCysOCyueCzjeCyruCyvuCyteCysA!3m2!1d13.4253655!2d74.757167!5e0!3m2!1sen!2sin!4v1631957364520!5m2!1sen!2sin" width="600" height="600" style="border:0; display:flex; flex-direction:column; left:35%;" allowfullscreen="" loading="lazy"></iframe>
+   </section>
+
+   <section id="video">
+       <h1 class="headings">Video</h1>
+       <p>This is the video where I learn about Crafts,Writings and Sketchings as a part of my leisure time.</p>
+       <iframe width="900" height="538" src="https://www.youtube.com/embed/w5MDZnMp2As" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </section>
+
+   <section id="contact">
+       <h1 class="headings">Contact Me</h1>
+         <form action="" class="form">
+             <input type="text" name="name" class="input" placeholder="Enter Your Name">
+
+             <input type="email" name="email" class="input" placeholder="Enter your Email">             
+
+             <input type="numeric" name="age" class="input" placeholder="Enter Your Age">
+
+             <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Type a message here"></textarea>
+
+             <input type="submit" value="SEND" id="send">
+
+    <label for="gender">Gender</label>
+
+    <label for="gender">Male</label>
+    <input type="radio" name="gender" value="male">
+
+    <label for="gender">Female</label>
+    <input type="radio" name="gender" value="female">
+
+    <label for="gender">Others</label>
+    <input type="radio" name="gender" value="others"><br>
+   
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+
+   </form>
+   </section>
+
+<script type="text/javascript">
+ 
+function myFunction() {
+      var person = prompt("Please enter your name", "Your Name");
+          if (person != null) {
+                       document.getElementById("demo").innerHTML =
+    "Hello " + person + "!Welcome.";
+  }
+}
+
+function validateform(){
+    var name = /^[A-Za-z]+$/;
+    var email = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    var atposition=email.indexOf("@");  
+    var dotposition=email.lastIndexOf(".")
+    
+
+    if (name==null || name==""){ 
+  
+            alert("Name can't be blank");  
+            return false; 
+    }
+
+    if (atposition<1 || dotposition<atposition+2 || dotposition+2>=email.length){  
+              alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+              return false;  
+    }  
+    
+function allnumeric(age){ 
+    var numbers = /^[0-9]+$/;
+    if(age.value.match(numbers))
+    {
+         return true;
+    }
+    else
+    {
+        alert('Enter the age in number only');
+        age.focus();
+        return false;
+    }
+}   
+}  
+
+</script>
+
+</body>
+</html>
