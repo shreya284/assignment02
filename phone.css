@@ -26,9 +26,9 @@
 }
 
 #location iframe{
-   width:280px;
-   height:280px;
-   position:relative;
+   width:200px;
+   height:200px;
+   position:sticky;
    left:20%;
 }
  
@@ -39,7 +39,7 @@
 
 #video iframe{
   position:relative;
-  width:300px;
+  width:250px;
   height:250px;
   left:20%;
 }
@@ -56,8 +56,6 @@
 #send{
    width:20%;
 }
-
-
 
 
 
