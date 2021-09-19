@@ -9,12 +9,11 @@
 }
 
 /*About*/
-h2{
-     left:37%;
+#about h2{
+     left:60%;
 }
 
 #pic{
-   flex-direction:column;
    align-items:center;
 }
 
