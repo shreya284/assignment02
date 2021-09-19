@@ -18,17 +18,27 @@
 }
 
 /*Location*/
+p{
+    text-align:center;
+}
+
 iframe{
-   width:400px;
-   height:400px;
+   width:200px;
+   height:200px;
    position:relative;
+   left:20%;
 }
  
 /*Video*/
+p{
+    text-align:center;
+}
+
 iframe{
   position:relative;
-  width:300px;
-  height:300px;
+  width:100px;
+  height:100px;
+  left:20%;
 }
 
 /*Contact*/
